@@ -1,0 +1,49 @@
+.iconos {
+    display: flex !important; /* Utiliza flexbox para la disposición de los elementos hijos */
+    justify-content: center !important; /* Centra los elementos hijos horizontalmente */
+    align-items: center !important; /* Centra los elementos hijos verticalmente */
+    width: 100% !important; /* El contenedor ocupa el 100% del ancho disponible */
+    max-width: 600px !important; /* Establece un ancho máximo de 600px */
+    background: #008080 !important; /* Establece el color de fondo */
+    padding: 2px !important; /* Añade un relleno de 2px alrededor del contenido */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important; /* Añade una sombra suave alrededor del contenedor */
+    border-radius: 80px !important; /* Redondea las esquinas del contenedor */
+    margin: 0 auto !important; /* Centra el contenedor horizontalmente */
+}
+
+.icon {
+    text-align: center; /* Centra el texto dentro de cada ícono */
+    padding: 10px; /* Añade un relleno de 10px alrededor de cada ícono */
+}
+
+.icon a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #032958; /* Establece el color del texto de los enlaces */
+    transition: color 0.3s; /* Añade una transición suave para el cambio de color */
+}
+
+.icon i {
+    font-size: 1.5em; /* Aumenta el tamaño de la fuente de los íconos */
+    margin-bottom: 5px; /* Añade un margen inferior de 5px */
+    transition: color 0.3s; /* Añade una transición suave para el cambio de color */
+}
+
+.icon span {
+    display: block; /* Hace que el span se comporte como un bloque */
+    margin-top: 5px; /* Añade un margen superior de 5px */
+    font-size: 0.9em; /* Establece el tamaño de la fuente del texto dentro del span */
+    transition: color 0.3s; /* Añade una transición suave para el cambio de color */
+}
+
+.icon a:hover i, .icon a:hover span {
+    color: #d7d7d7 !important; /* Cambia el color del ícono y el texto al pasar el ratón sobre el enlace */
+}
+@media only screen and (min-width: 600px) {
+    .login {
+        width: 50%; /* Ancho del formulario */
+        margin: 0 auto; /* Centra el formulario */
+    }
+}
+.icon.active i, .icon.active span {
+    color: #ffffff !important; /* Establece el color del ícono y el texto activo */
+}

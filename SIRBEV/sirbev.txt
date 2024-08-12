@@ -1,0 +1,61 @@
+create table administradores(
+idadmin varchar (10) not null primary key,
+passadmin varchar (30) not null,
+nomadmin varchar (30) not null,
+apePadmin varchar (30) not null,
+apeMadmin varchar (30),
+correoadmin varchar (30) not null,
+teladmin varchar (10) not null,
+fotoadmin blob
+);
+
+create table docentes(
+iddoc varchar (10) not null primary key,
+passdoc  varchar (30) not null,
+nomdoc  varchar (30) not null,
+apePdoc  varchar (30) not null,
+apeMdoc  varchar (30),
+correodoc  varchar (30) not null,
+teldoc  varchar (10) not null,
+fotodoc blob,
+idadministrador varchar (10) not null,
+constraint admin_fk foreign key (idadministrador) references administradores (idadmin)
+);
+
+create table carreras (
+id numeric (6) not null primary key,
+carrera varchar (100)
+);
+
+
+create table alumnos (
+matricula varchar (10) not null primary key,
+nombre varchar (30) not null,
+apellidoP  varchar (30) not null,
+apellidoM  varchar (30),
+correo  varchar (30) not null,
+tel  varchar (10) not null,
+sexo varchar (10) not null,
+cuatrimestre numeric (2) not null,
+grupo numeric (2) not null,
+descripción varchar (255) not null,
+iddocente varchar (10) not null,
+idcarrera numeric (6) not null,
+constraint docen_fk foreign key (iddocente) references docentes (iddoc),
+constraint carrera_fk foreign key (idcarrera) references carreras (id)
+);
+
+insert into administradores
+values ('20233tn032', 'root123', 'Johan Emanuel', 'Rodriguez', 'Palomino', '20233tn032@utez.edu.mx', 
+7773524882, NULL);
+
+select * from administradores;
+select * from docentes;
+
+SELECT id_paciente,nombre,apellido,sexo,id_hospital FROM pacientes
+
+
+
+
+
+

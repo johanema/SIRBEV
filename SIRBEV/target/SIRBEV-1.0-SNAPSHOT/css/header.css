@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    width: 100vw;
+    height: auto; /* Añade una altura automática para evitar que se aplaste */
+    min-height: 50px; /* Añade una altura mínima para asegurar un tamaño mínimo */
+    background-color: #ffffff;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+.main-content {
+    padding-top: 80px; /* Ajusta el padding superior para evitar que el contenido se solape con el header */
+}
+@media only screen and (min-width: 600px) {
+    .login {
+        width: 50%; /* Ancho del formulario */
+        margin: 0 auto; /* Centra el formulario */
+    }
+}

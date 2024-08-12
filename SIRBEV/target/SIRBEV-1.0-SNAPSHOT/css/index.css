@@ -1,0 +1,174 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    height: 100vh;
+}
+
+header {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffff;
+    color: #032958;
+    position: relative;
+    top: 15%;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.logos {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    /* Alineación vertical centrada */
+}
+
+.logos .sirbev {
+    max-height: 30px;
+    /* Ajusta el tamaño máximo del logo SIRBEV */
+    height: auto;
+    padding: 20px;
+}
+
+.logos .utez {
+    max-height: 50px;
+    /* Ajusta el tamaño máximo del logo UTEZ */
+    height: auto;
+    padding: 20px;
+}
+
+
+/* Seccion para el formulario */
+.sesion {
+    position: absolute;
+    /* Posiciona el formulario de manera absoluta dentro de su contenedor */
+    top: 60%;
+    /* Sitúa el formulario a un 60% desde el borde superior de su contenedor */
+    left: 50%;
+    /* Sitúa el formulario a un 50% desde el borde izquierdo de su contenedor */
+    transform: translate(-50%, -50%);
+    /* Centra el formulario exactamente en el centro del contenedor */
+    background-color: none;
+    /* No se establece un color de fondo para el formulario */
+    padding: 20px;
+    /* Añade un relleno interior de 20 píxeles alrededor del contenido del formulario */
+}
+
+/* Sección para el campo de ID y contraseña */
+
+/* Selector para las secciones dentro del formulario */
+.sesion section {
+    margin-bottom: 15px;
+    /* Añade un margen inferior de 15 píxeles entre cada sección del formulario */
+}
+
+/* Estilos para las etiquetas dentro de las secciones */
+
+/* Selector para las etiquetas dentro de las secciones del formulario */
+.sesion label {
+    font-size: 18px;
+    /* Establece el tamaño de fuente de las etiquetas en 18 píxeles */
+    color: #032958;
+    /* Establece el color del texto de las etiquetas en un tono de azul oscuro */
+    font-weight: bold;
+    /* Hace que el texto de las etiquetas sea negrita */
+}
+
+/* Estilos para los campos de entrada de texto */
+
+/* Selectores para los campos de entrada de tipo texto y contraseña dentro del formulario */
+.sesion input[type="text"],
+.sesion input[type="password"] {
+    width: calc(100% - 10px);
+    /* Establece el ancho de los campos de entrada restando 10 píxeles para compensar el padding */
+    padding: 10px;
+    /* Añade un relleno interior de 10 píxeles dentro de los campos de entrada */
+    font-size: 16px;
+    /* Establece el tamaño de fuente de los campos de entrada en 16 píxeles */
+    border: none;
+    /* Elimina el borde de los campos de entrada */
+    border-bottom: 2px solid #707070;
+    /* Añade un borde inferior sólido de 2 píxeles con un color gris oscuro (#707070) */
+    background: none;
+    /* Establece el fondo de los campos de entrada como transparente */
+    outline: none;
+    /* Elimina el contorno alrededor de los campos de entrada al enfocar */
+}
+
+/* Estilos para el botón de enviar */
+/* Estilos para el botón con la clase "boton" */
+.boton {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #008080;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos para el estado de hover del botón con la clase "boton" */
+.boton:hover {
+    background-color: #007070;
+}
+
+/* Estilos para los enlaces dentro del formulario */
+
+/* Selector para los enlaces dentro de la sección de "olvidar contraseña" del formulario */
+.sesion .olvidar a {
+    font-size: 14px;
+    /* Establece el tamaño de fuente de los enlaces en 14 píxeles */
+    color: #333;
+    /* Establece el color del texto de los enlaces en un tono de gris oscuro (#333) */
+    text-decoration: none;
+    /* Elimina el subrayado predeterminado de los enlaces */
+}
+
+/* Estilos para el estado de hover de los enlaces */
+
+/* Selector para el estado de hover (sobre) de los enlaces dentro de la sección de "olvidar contraseña" del formulario */
+.sesion .olvidar a:hover {
+    text-decoration: none;
+    /* Elimina el subrayado de los enlaces al pasar el mouse sobre ellos */
+}
+/* Estilos para el selector */
+.sesion select {
+    width: calc(100% - 10px);
+    padding: 10px;
+    font-size: 16px;
+    color: #032958; /* Color del texto */
+    border: none; /* Sin borde */
+    border-bottom: 2px solid #009d7b; /* Borde inferior verde */
+    background-color: transparent; /* Fondo transparente */
+    outline: none; /* Sin contorno */
+    transition: border-color 0.3s ease; /* Transición suave para el borde */
+}
+
+/* Efecto hover para el selector */
+.sesion select:hover {
+    border-color: #007070; /* Color del borde al pasar el mouse */
+}
+
+/* Estilo para el estado de enfoque (focus) */
+.sesion select:focus {
+    border-color: #007070; /* Color del borde al enfocar */
+    background-color: rgba(0, 157, 123, 0.1); /* Fondo suave al enfocar */
+}

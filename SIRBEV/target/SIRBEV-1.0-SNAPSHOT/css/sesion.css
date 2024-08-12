@@ -1,0 +1,82 @@
+ /* Estilos aplicados al cuerpo de la página */
+ body {
+    margin: 0;
+    /* Elimina el margen predeterminado */
+    padding: 0;
+    /* Elimina el relleno predeterminado */
+    display: flex;
+    /* Usa Flexbox para el diseño de los hijos directos */
+    flex-direction: column;
+    /* Dispone los elementos en una columna */
+    justify-content: center;
+    /* Centra los elementos verticalmente */
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+    height: 100vh;
+    /* Establece la altura del cuerpo en el 100% de la ventana gráfica */
+    background-color: #f0f0f0;
+    /* Establece el color de fondo */
+    font-family: Arial, sans-serif;
+    /* Define la fuente a usar */
+}
+
+
+h1 {
+    margin-bottom: 50px;
+    color:#032958;
+}
+form {
+    margin-bottom: 15px;
+    text-align: left;
+    color: #032958;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #032958;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: content-box;
+    border-style: solid;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    color: #032958;
+    width: 100%; /* Ancho del 100% del contenedor */
+            padding: 10px; /* Espaciado interno de 10px */
+            margin: 10px 0; /* Espaciado superior e inferior de 10px */
+            border: none; /* Sin bordes */
+            border-bottom: 2px solid #000; /* Solo borde inferior */
+            text-align: center; /* Texto centrado */
+}
+
+.flecha{
+    cursor: pointer;
+}
+
+.inicio {
+    padding: 8px 26px;
+    font-size: 16px;
+    color: #032958;
+    background-color: #008F70;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+ @media only screen and (min-width: 600px) {
+     .login {
+         width: 50%; /* Ancho del formulario */
+         margin: 0 auto; /* Centra el formulario */
+     }
+ }
+button:hover {
+    background-color: #008F70;
+}
+
+
